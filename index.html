@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Don't Click!</title>
+  <style>
+    body {
+      background-color: #005;
+      text-align: center;
+      padding-top: 20vh;
+      font-family: monospace;
+    }
+    button {
+      padding: 20px 40px;
+      font-size: 24px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #ff0004;
+      color: #fff;
+    }
+    button:hover {
+      background-color: #ff1113;
+    }
+    #monkey-container {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="dont-click-btn">Don't Click!</button>
+  <div id="monkey-container" style="font-size: 100px;">
+    <pre>
+Fuck Off
+    </pre>
+  </div>
+  
+  <script>
+    document.getElementById('dont-click-btn').addEventListener('click', () => {
+      document.getElementById('monkey-container').style.display = 'block';
+      document.getElementById('dont-click-btn').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
